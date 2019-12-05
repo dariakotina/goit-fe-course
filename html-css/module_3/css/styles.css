@@ -8,11 +8,14 @@ body {
 .wrapper {
     width: 900px;
     margin: 0 auto;
+
 }
 
 .page-header {
     background-color: transparent;
-    margin: 68px 0 95px;
+    margin: 0;
+    padding-top: 68px;
+    padding-bottom: 95px;
    
 }
 
@@ -21,16 +24,20 @@ body {
     font-size: 0;
     list-style: none;
     padding: 0;
+    text-align: center;
 }
 
 .navigation li {
     box-sizing: border-box;
     display: inline-block;
-    margin: auto 0;
-    width: 25%;
+    margin-right: 120px;
     font-size: 14px;
-    text-align: center;
 }
+
+.navigation li:last-child {
+    margin: 0;
+}
+
 .navigation a {
     font-weight: 400;
     color: #626262;
@@ -63,20 +70,28 @@ a:focus {
     margin-bottom: 60px;
 }
 
+.article-item:nth-last-child(-n+2) {
+    margin-bottom: 0;
+}
+
 .article-item-name {
     color: #b4ad9e;
     line-height: 17px;
     text-transform: uppercase;
     font-size: 14px;
+    margin: 0, 8px;
 }
 
 h2 {
     line-height: 36px;
     font-size: 30px;
+    margin: 0, 48px;
 }
 .article-item-text {
     font-size: 16px;
+    margin: 0, 132 px;
 }
+
 button {
     width: 160px;
     height: 60px;
@@ -88,6 +103,12 @@ button {
     display: block;
     margin: 0 auto;
 }
-main {
-    margin-bottom: 70px;
+
+button:hover,
+button:focus {
+    color: #57c6f8;
+}
+
+section {
+    padding-bottom: 70px;
 }
