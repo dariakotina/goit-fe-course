@@ -7,13 +7,7 @@
     margin: 0 auto;
 }
 
-p,
-h2,
-h3 {
-    margin: 0;
-    padding: 0;
-}
-.page-header {
+.clearfix {
     font-family: 'Open Sans', sans-serif;
     background-color: transparent;
     margin: 0;
@@ -36,6 +30,16 @@ h3 {
 }
 .site-logo {
 display: inline-block;
+font-size: 30px;
+line-height: 32px;
+font-weight: 700;
+text-transform: uppercase;
+text-decoration: none;
+color: #555252;
+margin: 0;
+}
+.site-logo:hover {
+color: #1abc9c;
 }
 .nav-item a {
     font-size: 14px;
@@ -65,6 +69,7 @@ h2 {
     text-transform: uppercase;
     text-align: center;
     margin: 0;
+    padding: 0;
     margin-bottom: 122px;
 }
 h2:after {
@@ -96,11 +101,11 @@ h2:after {
 .news-blog-list:nth-child(3n) {
     margin-right: 0;
 }
-.product-list-item:nth-child(n+4) {
+.product-list-item:nth-last-child(-n+4) {
     margin-bottom: 0;
 }
 .products {
-    margin-bottom: 98px;
+    padding-bottom: 98px;
 }
 
 .item-name,
@@ -111,6 +116,7 @@ h2:after {
   float: left;
   font-size: 18px;
   line-height: 40px;
+  text-decoration: none;
 }
 .item-name {
     padding-left: 13px;
@@ -136,7 +142,7 @@ content: "";
   clear: both;
 }
 .news {
-    margin-bottom: 80px;
+    padding-bottom: 80px;
 }
 .news-blog-list {
     display: inline-block;
