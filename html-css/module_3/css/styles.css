@@ -4,6 +4,10 @@ body {
     font-size: 14px;
     line-height: 24px;
 }
+p,
+h2 {
+    margin: 0;
+}
 
 .wrapper {
     width: 900px;
@@ -13,7 +17,7 @@ body {
 
 .page-header {
     background-color: transparent;
-    margin: 0;
+    margin: 0 auto;
     padding-top: 68px;
     padding-bottom: 95px;
    
@@ -56,6 +60,7 @@ a:focus {
     font-size: 0px;
     margin: 0;
     padding: 0;
+    padding-bottom: 56px;
 }
 .article li {
     list-style: none;
@@ -79,17 +84,19 @@ a:focus {
     line-height: 17px;
     text-transform: uppercase;
     font-size: 14px;
-    margin: 0, 8px;
+    margin-bottom: 20px;
 }
 
 h2 {
     line-height: 36px;
     font-size: 30px;
-    margin: 0, 48px;
+    margin-bottom: 30px;
 }
 .article-item-text {
     font-size: 16px;
-    margin: 0, 132 px;
+}
+img {
+    margin-bottom: 15px;
 }
 
 button {
