@@ -8,13 +8,17 @@ h2 {
     margin: 0;
     padding: 0;
 }
-img {
+* img {
     display: block;
     height: auto;
     max-width: 100%;
 }
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
 .wrapper {
-    max-width: 1600px;
+    max-width: 1110px;
     margin: 0 auto;
 }
 /* navigation */
@@ -27,7 +31,7 @@ img {
 }
 
 .logo {
-    display: inline-block;
+    display: block;
     font-size:30px;
     font-weight: 900;
     line-height: 32px;
@@ -44,7 +48,6 @@ img {
 }
 .nav {
     list-style: none;
-    display: inline-block;
     position: absolute;
     right: 0;
     top: 50%;
@@ -63,6 +66,7 @@ img {
 }
 
 .nav-item a {
+    display: block;
     text-transform: uppercase;
     text-decoration: none;
     color: #555252;
@@ -72,17 +76,13 @@ img {
 }
 
 /* slider */
-h1 {
-    visibility: hidden;
-    font-size: 0;
-}
 .slider {
     position: relative;
-    width: 1600px;
+    width: 1110px;
     height: 600px;
-    margin: 0 auto;
+    display: block;
 }
-.slider-btn {
+* .slider-btn {
     position: absolute;
     display: inline-block;
     width: 106px;
@@ -110,13 +110,13 @@ h1 {
     opacity: 0.6;
 }
 .prev-btn {
-    left: 245px;
+    left: 0;
 }
 .prev-btn::before {
     transform: rotate(45deg);
 }
 .next-btn {
-    right: 245px;
+    right: 0;
 }
 .next-btn::before {
     transform: rotate(225deg);
@@ -126,9 +126,6 @@ h1 {
     padding: 0;
     list-style: none;
 }
-.slides-item {
-    position: relative;
-}
 .slides img {
     height: 600px;
     width: 100%;
@@ -137,17 +134,19 @@ h1 {
 .content-pr {
     position: absolute;
     top: 50%;
-    right: 50%;
-    transform: translate(50%, -50%);
-}
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
 .slides-name {
     margin: 0;
+    display: inline;
     padding-bottom: 10px;
     font-size: 60px;
     font-weight: 900;
     line-height: 82px;
     text-transform: uppercase;
     color: white;
+    white-space: nowrap;
 }
 .slides-services {
     margin: 0;
@@ -159,8 +158,9 @@ h1 {
 }
 /* Product section */
 .collection {
-    max-width: 1600px;
+    max-width: 1110px;
     margin: 0 auto;
+    padding-top: 92px;
     background-color: #e9f0fd;
     padding-bottom: 100px;
 }
@@ -173,7 +173,7 @@ h1 {
     text-transform: uppercase;
     color: #515151;
     text-align: center;
-    padding: 92px 0 104px;
+    margin-bottom: 104px;
 }
 .title::after {
     display: block;
@@ -197,11 +197,17 @@ h1 {
 .products li {
     display: inline-block;
 }
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
 .product-item {
     width: 255px;
     height: 322px;
     margin-right: 30px;
     position: relative;
+    float: left;
 }
 .product-item:last-child {
     margin-right: 0;
@@ -231,28 +237,50 @@ h1 {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-.icons-item {
-    display: inline-block;
+.icon-link {
+    width: 50px;
+    height: 50px;
+    border: none;
     margin-right: 8px;
     margin-bottom: 8px;
+    padding: 0;
+    background-color: transparent;
+    color: inherit;
+    cursor: pointer;
 }
-.cart {
+.btn-like {
+    background-image: url(../img/BUTTON\ like.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.btn-arrow {
+    background-image: url(../img/BUTTON\ arrow.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.btn-clock {
+    background-image: url(../img/BUTTON\ time.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 0; 
+}
+.btn-cart {
+    background-image: url(../img/BUTTON\ cart.png);
+    background-position: center;
+    background-repeat: no-repeat;
     margin: 0;
+    width: 166px;
     background-color: #323232;
-}
-.icons li:nth-child(n+3) {
-    margin-right: 0;
-}
 
-.icons-item:hover {
+}
+.icon-link:hover {
     background-color: #1abc9c;
     opacity: 1;
 }
 
 .name,
 .price {
-    display: inline-block;
+    display: block;
     color: #fff;
     text-transform: uppercase;
     font-size: 18px;
@@ -282,7 +310,7 @@ h1 {
     background-color: #7fd9c7;
 }
 footer {
-    max-width: 1600px;
+    max-width: 1110px;
     height: 88px;
     background-color: #323232;
     margin: 0 auto;
