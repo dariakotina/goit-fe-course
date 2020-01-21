@@ -11,22 +11,23 @@
 </head>
 <body>
     <header>
-        <nav class="menu">
-            <a href="#" class="logo">MoGo</a> 
-             <ul class="menu-bar">
-                <li class="menu-item"><a href="#">About</a></li>
-                <li class="menu-item"><a href="#">Service</a></li>
-                <li class="menu-item"><a href="#">Work</a></li>
-                <li class="menu-item"><a href="#">Blog</a></li>
-                <li class="menu-item"><a href="#">Contact</a></li>
-         </ul>
-        </nav>
+        <div class="container">
+            <nav class="menu">
+                <a href="#" class="logo">MoGo</a> 
+                 <ul class="menu-bar">
+                    <li class="menu-item active"><a href="#">About</a></li>
+                    <li class="menu-item active"><a href="#">Service</a></li>
+                    <li class="menu-item active"><a href="#">Work</a></li>
+                    <li class="menu-item active"><a href="#">Blog</a></li>
+                    <li class="menu-item active"><a href="#">Contact</a></li>
+             </ul>
+            </nav> 
+        </div>
     </header>
     <main>
         <section class="services">
-            <p class="text">We work with</p>
-            <h2>Amazing services</h2>
-            <div class="container-services">
+                <h2><span class="text">We work with</span> <br> Amazing services</h2>
+            <div class="container">
                 <ul class="tools">
                     <li class="tools-item clock">
                         <h3 class="item-name">Photography</h3>
@@ -56,10 +57,9 @@
             </div>
         </section>
         <section class="team">
-            <p class="text">Who we are</p>
-        <h2>Meet our teem</h2>
+            <h2><span class="text">Who we are</span> <br> Meet our teem</h2>
         <p class="team-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <div class="container-team">
+        <div class="container">
             <ul class="people">
                 <li class="team-members">
                     <div class="overlayer">
@@ -106,12 +106,14 @@
     </main>
 </body>
 <footer>
-    <p class="footer">© 2016 MoGo free PSD template by <a href="#" class="footer-link">Laaqiq</a></p>
-    <div class="btn-wrapper">
+    <div class="container ftr">
+        <p class="footer">© 2016 MoGo free PSD template by <a href="#" class="footer-link">Laaqiq</a></p>
+        <div class="btn-wrapper">
         <form action="">
             <input type="text" name="email" class="form-field" placeholder="Your email...">
         </form>
         <button class="subscribe">Subcribe</button>
+        </div>
     </div>
 </footer>
 </html>
