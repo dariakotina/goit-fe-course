@@ -1,0 +1,73 @@
+@media screen and (min-width: 748px) {
+    .container {
+        width: 748px;
+    }
+    .menu {
+        flex-direction: row;
+        padding: 0 40px;
+        height: 75px;
+    }
+    .promo {
+        padding: 140px 0 234px;
+    }
+    .promo--title {
+        font-size: 52px;
+        line-height: 62px;
+        margin-bottom: 38px;
+    }
+    .promo--title_text {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        width: inherit;
+    }
+    .button-red-white {
+        width: 230px;
+    }
+    .partners {
+        padding-bottom: 40px;
+    }
+    .partners--title {
+        margin-bottom: 40px;
+    }
+    .partners--list {
+        display: flex;
+        flex-wrap: wrap;
+        width: 492px;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    .partners--list-contact {
+        margin: 0 auto 50px;
+    }
+    .Hunter {
+        order: 1;
+    }
+    .Lucas {
+        order: 3;
+    }
+    .Heather {
+        order: 2;
+    }
+    .Bradley {
+        order: 4;
+    }
+    .button-white-red {
+        width: 190px;
+    }
+}
+@media screen and (min-width: 940px) {
+    .container {
+        width: 940px;
+    }
+    .menu {
+        padding: 0;
+    }
+    .partners {
+        padding-bottom: 70px;
+    }
+    .partners--list {
+        flex-wrap: nowrap;
+        width: 940px;
+    }
+}
