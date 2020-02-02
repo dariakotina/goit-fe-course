@@ -1,6 +1,6 @@
 @media screen and (min-width: 748px) {
     .container {
-        width: 748px;
+        width: 728px;
     }
     .menu {
         flex-direction: row;
@@ -22,7 +22,7 @@
         width: inherit;
     }
     .button-red-white {
-        width: 230px;
+        padding: 0 20px;
     }
     .partners {
         padding-bottom: 40px;
@@ -53,12 +53,12 @@
         order: 4;
     }
     .button-white-red {
-        width: 190px;
+        padding: 0 25px;
     }
 }
 @media screen and (min-width: 940px) {
     .container {
-        width: 940px;
+        width: 920px;
     }
     .menu {
         padding: 0;
