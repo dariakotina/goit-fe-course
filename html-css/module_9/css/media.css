@@ -1,0 +1,40 @@
+@media screen and (min-width: 748px) {
+    .menu {
+        padding-top: 50px;
+    }
+    .logo {
+        text-align: left;
+    }
+    .menu-item {
+        padding: 0 40px;
+    }
+    .promo {
+        padding: 140px 0 234px;
+    }
+    .promo--title {
+        font-size: 52px;
+        line-height: 62px;
+        margin-bottom: 38px;
+    }
+    .promo--title_text {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        width: inherit;
+    }
+    .button-white {
+        margin: 0;
+    }
+    .button-red-white {
+        padding: 0 20px;
+    }
+    .button-white-red {
+        padding: 0 25px;
+    }
+}  
+@media screen and (min-width: 940px) {
+    .partners {
+        padding-bottom: 70px;
+    }
+
+}
