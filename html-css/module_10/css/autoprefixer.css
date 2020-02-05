@@ -315,6 +315,8 @@ h3 {
 .team-members__link {
     width: 56px;
     height: 56px;
+    display: flex;
+    align-items: center;
     background-color: var(--hover-color);
     background-repeat: no-repeat;
     background-position: center;
