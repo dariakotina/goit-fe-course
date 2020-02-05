@@ -353,6 +353,7 @@ h3 {
     height: 32px;
     fill: #f38181;
     margin: 0 auto;
+    text-anchor: middle;
 }
 .team-members img {
     margin-bottom: 28px;
