@@ -284,7 +284,6 @@ h3 {
     background-position: center;
     background-size: auto;
 }
-
 .team-members:hover .team-members__overlayer {
     display: flex;
     box-shadow: 10px 10px #95e1d3;
@@ -297,6 +296,16 @@ h3 {
 .team-members__link:hover {
     background-color: var(--yellow-color);
     transition: all 200ms linear;
+}
+.team-members__svg {
+    display: block;
+    width: 32px;
+    height: 32px;
+    fill: #f38181;
+    margin: 0 auto;
+}
+.team-members__link:hover .team-members__svg {
+    fill:#ffffff;
 }
 .team-members img {
     margin-bottom: 28px;
