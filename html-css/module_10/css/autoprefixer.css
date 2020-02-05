@@ -289,6 +289,15 @@ h3 {
     position: relative;
 }
 .team-members__overlayer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: absolute;
     width: 380px;
     height: 470px;
@@ -341,7 +350,7 @@ h3 {
 .team-members__svg {
     display: block;
     width: 56px;
-    height: 56px;
+    height: 100%;
     fill: #f38181;
     margin: 0 auto;
 }
