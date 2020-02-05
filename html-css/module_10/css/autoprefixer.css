@@ -353,7 +353,11 @@ h3 {
     height: 32px;
     fill: #f38181;
     margin: 0 auto;
-    text-anchor: middle;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.team-members__link:hover .team-members__svg {
+    fill:#ffffff;
 }
 .team-members img {
     margin-bottom: 28px;
