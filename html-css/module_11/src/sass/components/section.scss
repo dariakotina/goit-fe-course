@@ -1,0 +1,33 @@
+.section {
+    padding: 50px 0 50px;
+    margin: 0 auto;
+}
+.section__title {
+    margin: 0 auto;
+    width: 380px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: $black-color;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.section__title-text {
+    font-family: $script-font-stack;
+    text-transform: initial;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 52px;
+    font-style: italic;
+    margin-bottom: 14px;
+}
+.section__title::after {
+    content: " ";
+    display: table;
+    width: 60px;
+    height: 4px;
+    background-color: $yellow-color;
+    margin: auto;
+    margin-top: 42px;
+}

@@ -1,0 +1,86 @@
+.team__text {
+    font-family: $second-font-stack;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #b6b6b6;
+    text-align: center;
+    width: 980px;
+    margin: 0 auto;
+    margin-bottom: 92px;
+}
+
+.team-members {
+    position: relative;
+}
+.team-members__overlayer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 380px;
+    height: 470px;
+    opacity: 0;
+    background-image: linear-gradient(to top, rgba(252, 227, 138, 0.90),
+    rgba(243, 129, 129, 0.90));
+}
+.team-members__social {
+    width: 229px;
+}
+.team-members__link {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    background-color: $hover-color;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+}
+
+.team-members:hover .team-members__overlayer {
+    display: flex; 
+    box-shadow: 10px 10px #95e1d3;
+    opacity: inherit;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-10px, -10px);
+    transition: all 200ms linear;
+}
+.team-members__link:hover {
+    background-color: $yellow-color;
+    transition: all 200ms linear;
+}
+.team-members__svg {
+    display: block;
+    width: 32px;
+    height: 32px;
+    fill: $yellow-color;
+    margin: 0 auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.team-members__link:hover .team-members__svg {
+    fill: $hover-color;
+}
+.team-members img {
+    margin-bottom: 28px;
+}
+.team-members__name {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $black-color;
+    text-align: center;
+    margin-bottom: 14px;
+}
+.team-members__position {
+    font-family: $second-font-stack;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 24px;
+    color: $grey-color;
+    text-align: center;
+}

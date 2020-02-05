@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box; 
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+* img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+.background {
+  background-image: url(../images/bcg@1x.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-resolution: 192dpi) { 
+  .background{background:url(../images/bcg@2x.png);  
+  }
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}

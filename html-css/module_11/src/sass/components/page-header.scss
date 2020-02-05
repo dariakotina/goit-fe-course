@@ -1,0 +1,19 @@
+.page-nav {
+    min-height: 50px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.site-logo {
+    font-family: $main-font-stack;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-decoration: none;
+    color: $main-color;
+}
+.site-logo:hover {
+    color: $hover-color;
+    transition: all 200ms linear;
+}
