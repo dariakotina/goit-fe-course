@@ -280,9 +280,6 @@ h3 {
     width: 56px;
     height: 56px;
     background-color: var(--hover-color);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto;
 }
 .team-members:hover .team-members__overlayer {
     display: flex;
@@ -299,8 +296,8 @@ h3 {
 }
 .team-members__svg {
     display: block;
-    width: 32px;
-    height: 32px;
+    width: 56px;
+    height: 56px;
     fill: #f38181;
     margin: 0 auto;
 }

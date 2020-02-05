@@ -338,6 +338,13 @@ h3 {
     -o-transition: all 200ms linear;
     transition: all 200ms linear;
 }
+.team-members__svg {
+    display: block;
+    width: 56px;
+    height: 56px;
+    fill: #f38181;
+    margin: 0 auto;
+}
 .team-members img {
     margin-bottom: 28px;
 }
