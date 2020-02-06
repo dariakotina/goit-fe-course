@@ -86,6 +86,7 @@ h3 {
 }
 .menu {
     width: 490px;
+    margin-top: 40px;
 }
 .link {
     display: block;
@@ -93,6 +94,7 @@ h3 {
 }
 .menu__link { 
     color: var(--main-color);
+    font-family: var(--main-font-family);
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
@@ -236,19 +238,19 @@ h3 {
     top: 0;
     left: 25px;
 }
-.services__item-clock::before{
+.services__item--clock::before{
     background-image: url(../img/ALARM.png);
 }
-.services__item-line-graph::before {
+.services__item--line-graph::before {
     background-image: url(../img/LINE\ GRAPH.png);
 }
-.services__item-computer::before {
+.services__item--computer::before {
     background-image: url(../img/COMPUTER.png);
 }
-.services__item-book::before {
+.services__item--book::before {
     background-image: url(../img/BOOK.png);
 }
-.services__item-home::before {
+.services__item--home::before {
     background-image: url(../img/home.png);
 }
 .services__item-digital::before {
@@ -413,7 +415,7 @@ h3 {
     color: var(--black-color);
     display: block;
 }
-.page-footer__link {
+.page-footer__link:hover {
     color: var(--yellow-color);
 }
 .page-footer__wrapper {
